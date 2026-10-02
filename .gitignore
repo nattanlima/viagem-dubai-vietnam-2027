@@ -1,0 +1,9 @@
+# Local research, connected-sheet references, screenshots and intermediate builds
+/outputs/
+/node_modules/
+__pycache__/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db

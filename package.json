@@ -1,0 +1,12 @@
+{
+  "name": "viagem-dubai-vietnam-2027",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Roteiro interativo de Dubai e Vietnã",
+  "scripts": {
+    "test": "node tests/navigation.cjs"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.12"
+  }
+}
