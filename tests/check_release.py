@@ -22,7 +22,7 @@ assert any(e['id']=='rove' and e['time']=='11:30–12:00' for e in day['events']
 assert any(e['id']=='rove' and e['time']=='22:15–23:15' and 'retirar' in e['duration'].replace('retirada','retirar') for e in day['events'])
 assert day['events'][-1]['id']=='dxb' and day['events'][-1]['time'].startswith('23:15')
 assert 'sem quarto/banho' in day['warning']
-assert len(photos)==44 and set(photos)==set(data['items'])
+assert len(photos)==45 and set(photos)==set(data['items'])
 for key,photo in photos.items():
     raw=base64.b64decode(photo['src'].split(',',1)[1],validate=True)
     assert raw.startswith(b'\xff\xd8') and raw.endswith(b'\xff\xd9'),key
@@ -35,5 +35,11 @@ for day in data['days']:
     for i,leg in enumerate(legs):
         assert (leg['a'],leg['b'])==(day['route'][i]['id'],day['route'][i+1]['id'])
         assert len(leg['coordinates'])>2 and leg['distance']>0
-assert sum(map(len,routes.values()))==70
-print('PASS: public artifact; no private sheet/local paths; checkout 12h; baggage return before DXB; 44 photos; 70 routed legs.')
+assert sum(map(len,routes.values()))==71
+lunch_day=next(day for day in data['days'] if day['n']==20)
+assert any(e['id']=='huonglien' and e['time']=='12:30–13:45' for e in lunch_day['events'])
+assert [leg['b'] for leg in routes['20']][1:4]==['hoalo','huonglien','national']
+assert lunch_day['events'][-1]['id']=='han' and lunch_day['events'][-1]['time']=='20:15'
+assert next(e for e in lunch_day['events'] if e['id']=='spice')['time']=='18:00'
+assert '24 Le Van Huu' in data['items']['huonglien']['query']
+print('PASS: public artifact; checkout and baggage; Obama restaurant between museums; dinner and airport preserved; 45 photos; 71 routed legs.')

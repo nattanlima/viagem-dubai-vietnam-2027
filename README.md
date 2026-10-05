@@ -7,8 +7,8 @@ Apresentação interativa de uma viagem a dois, com roteiro por dia, fotografias
 ## O que há no projeto
 
 - Quinze dias de viagem, entre 11 e 25 de fevereiro de 2027.
-- Fotos identificadas de 44 locais, com ampliação e créditos.
-- Setenta trechos calculados para carro e caminhada, incluindo restaurantes, hotéis e aeroportos.
+- Fotos identificadas de 45 locais, com ampliação e créditos.
+- Setenta e um trechos calculados para carro e caminhada, incluindo restaurantes, hotéis e aeroportos.
 - Mapa interativo com OpenFreeMap / OpenStreetMap, via MapLibre GL JS.
 - Avisos em vermelho para horários, reservas e restrições que exigem atenção.
 - Download de uma cópia da apresentação; roteiro e fotos disponíveis offline.
@@ -30,6 +30,12 @@ O mapa completo e os links externos precisam de internet. Tempos de deslocamento
 | Por volta de 00h de 15/02 | Chegada planejada ao aeroporto; voo às 03h40 |
 
 Após o checkout, o roteiro não conta com acesso ao quarto ou banho. A primeira estadia em Dubai considera 11–14/02, três diárias, com chegada após meia-noite de 12/02. O hotel indicado no mapa permanece uma sugestão.
+
+## Dia 20/02: almoço no restaurante visitado por Obama
+
+O **Bún Chả Hương Liên**, na **24 Lê Văn Hưu**, entra das **12h30 às 13h45**, entre Hỏa Lò e o Museu Nacional. É o restaurante onde Barack Obama jantou com Anthony Bourdain em 23/05/2016. A ficha do Guia MICHELIN informa funcionamento diário das 08h às 20h e pagamento em dinheiro; reconfirmar para fevereiro de 2027. [Guia MICHELIN](https://guide.michelin.com/vn/en/ha-noi/ha-noi_2974158/restaurant/bun-cha-huong-lien) · [Registro da visita](https://vnexpress.net/ong-obama-goi-2-suat-bun-cha-ha-noi-3407803.html).
+
+O Museu Nacional passa para 14h, a Ópera fica como parada breve opcional e o retorno ao hotel ocorre às 16h. Permanecem o jantar no Spice Garden às 18h e o transfer para HAN às 20h15. Nenhuma reserva de mesa foi feita.
 
 ## Executar e editar
 
